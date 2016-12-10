@@ -1,0 +1,18 @@
+{
+    "name": "danjohnson/portfolio",
+    "require": {
+        "philo/laravel-blade": "^3.1",
+        "klein/klein": "^2.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dan Johnson",
+            "email": "dan@danj.eu"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+#projects{
+
+	article{
+		margin: 0 -1em 2em -1em;
+
+		img{
+			width: 200px;
+			height: 200px;
+			border-radius: 3px;
+		}
+
+		.descriptive-column{
+			border-bottom: 1px solid #e2e2e2;
+			padding-bottom: 3em;
+			margin-left: 1em;
+			padding-left: 0;
+		}
+
+		.project-title{
+			font-size: 2em;
+			font-weight: bold;
+			line-height: 1;
+		}
+		.project-description{
+			color: $light-color;
+		}
+		.project-skills{
+			font-size: 11px;
+			margin-top: 7px;
+			label{
+				text-transform: uppercase;
+				color: $light-color;
+			}
+			span{
+				background-color: $accent-color;
+				color: #fff;
+				padding: 1px 3px;
+				border-radius: 5px;
+				display: inline-block;
+			}
+		}
+		p{
+			margin-top: 10px;
+		}
+	}
+
+}
+
+#viewproject{
+	h1{
+		margin: 0;
+	}
+	h2{
+		color: $light-color;
+		font-size: 1em;
+		margin-top: 0;
+		font-weight: normal;
+	}
+	img{
+		border-radius: 5px;
+	}
+	code{
+		background-color: rgba(0,0,0,0.5);
+		color: rgba(255,255,255,0.8);
+		padding: 4px;
+		border-radius: 5px;
+	}
+}

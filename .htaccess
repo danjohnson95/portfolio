@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^css/(.*) /public/css/$1 [R,L]
+RewriteRule ^js/(.*) /public/js/$1 [R,L]
+RewriteRule ^img/(.*) /public/img/$1 [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . /index.php [L] 
