@@ -7,3 +7,4 @@ $Router->post('/contact', 'ContactController@store');
 
 $Router->get('/projects', 'ProjectController@index');
 $Router->get('/projects/zappem', 'ProjectController@zappem');
+$Router->get('/projects/aeromap', 'ProjectController@aeromap');

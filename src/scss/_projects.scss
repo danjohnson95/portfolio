@@ -20,6 +20,9 @@
 			font-size: 2em;
 			font-weight: bold;
 			line-height: 1;
+			a{
+				color: inherit;
+			}
 		}
 		.project-description{
 			color: $light-color;
@@ -59,10 +62,15 @@
 	img{
 		border-radius: 5px;
 	}
-	code{
+	code, pre{
 		background-color: rgba(0,0,0,0.5);
 		color: rgba(255,255,255,0.8);
 		padding: 4px;
 		border-radius: 5px;
+	}
+	pre{
+		border-radius: 0;
+		padding: 0 1em;
+		font-size:.9em;
 	}
 }

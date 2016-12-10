@@ -9,11 +9,15 @@
 		<article>
 			<div class="row">
 				<div class="column shrink">
-					<img src="/img/{{$project['img']}}">
+					<a href="/projects/{{$project['link']}}">
+						<img src="/img/{{$project['img']}}">
+					</a>
 				</div>
 				<div class="column descriptive-column">
 					<div class="project-title">
-						{{$project['title']}}
+						<a href="/projects/{{$project['link']}}">
+							{{$project['title']}}
+						</a>
 					</div>
 					<div class="project-description">
 						{{$project['description']}}

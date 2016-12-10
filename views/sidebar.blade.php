@@ -2,7 +2,9 @@
 
 	<div class="row align-center me-section">
 		<div class="column shrink">
-			<img src="/img/me.jpeg">
+			<a href="/">
+				<img src="/img/me.jpeg">
+			</a>
 			<div class="name">
 				Dan Johnson
 				<small>Full Stack Web Developer
