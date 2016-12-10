@@ -1,10 +1,12 @@
 <div id="sidebar">
 
-	<div class="row align-center me-section">
-		<div class="column shrink">
+	<div class="row me-section">
+		<div class="column shrink medium-12">
 			<a href="/">
 				<img src="/img/me.jpeg">
 			</a>
+		</div>
+		<div class="column small-8 medium-12">
 			<div class="name">
 				Dan Johnson
 				<small>Full Stack Web Developer
