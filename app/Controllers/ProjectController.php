@@ -121,7 +121,7 @@ PythagorasEquirectangular: function(CurrentLat, CurrentLon, CheckLat, CheckLon){
 						'MongoDB',
 						'WebSockets'
 					],
-				'img' => 'zappem-thumb.jpg'
+				'img' => 'zappem.jpg'
 			],
 			[
 				'title' => 'Aeromap',
@@ -133,7 +133,7 @@ PythagorasEquirectangular: function(CurrentLat, CurrentLon, CheckLat, CheckLon){
 						'GeoJSON',
 						'HTTPS'
 					],
-				'img' => 'aeromap-thumb.jpg'
+				'img' => 'aeromap.jpg'
 			],
 			[
 				'title' => 'GitBar',

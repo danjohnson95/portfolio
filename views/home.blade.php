@@ -3,36 +3,42 @@
 @section('content')
 
 <div id="projects">
-	<h1>Projects</h1>
-
+	<div class="row align-top">
 	@foreach($projects as $project)
-		<article>
-			<div class="row">
-				<div class="column shrink">
-					<a href="/projects/{{$project['link']}}">
-						<img src="/img/{{$project['img']}}">
-					</a>
-				</div>
-				<div class="column descriptive-column">
-					<div class="project-title">
+		<div class="column small-12 medium-6">
+			<article>
+				{{--<div class="top">
+					{{$project['title']}}
+				</div>--}}
+				<div class="row align-top">
+					<div class="column small-12">
 						<a href="/projects/{{$project['link']}}">
-							{{$project['title']}}
+							<div class="project-outer-img">
+								<div class="project-img" style="background-image:url(/img/{{$project['img']}})"></div>
+							</div>
 						</a>
 					</div>
-					<div class="project-description">
-						{{$project['description']}}
+					<div class="column small-12 descriptive-column">
+						<div class="project-title">
+							<a href="/projects/{{$project['link']}}">
+								{{$project['title']}}
+							</a>
+						</div>
+						<div class="project-description">
+							{{$project['description']}}
+						</div>
+						<p>
+							{!!$project['long_desc']!!} <strong><a href="/projects/{{$project['link']}}">Read more &raquo;</a></strong>
+						</p>
+						<div class="project-skills">
+							@foreach($project['skills'] as $skill)
+								<span>{{$skill}}</span>
+							@endforeach
+						</div>
 					</div>
-					<div class="project-skills">
-						@foreach($project['skills'] as $skill)
-							<span>{{$skill}}</span>
-						@endforeach
-					</div>
-					<p>
-						{!!$project['long_desc']!!} <strong><a href="/projects/{{$project['link']}}">Read more &raquo;</a></strong>
-					</p>
 				</div>
-			</div>
-		</article>
+			</article>
+		</div>
 	@endforeach
 </div>
 
