@@ -852,4 +852,18 @@ master.registerFormListener();
 document.addEventListener('pjax:success', function(e){
 	master.registerFormListener();
 });
+
+var topbar = document.getElementById('topbar');
+var nav = document.getElementById('sticky-nav');
+var offset = nav.offsetTop - 12;
+
+document.addEventListener('scroll', function(e){
+	if(window.pageYOffset >= offset && !topbar.classList.contains('stick')){
+		// Add the class
+		topbar.classList.add('stick');
+	}else if(window.pageYOffset < offset && topbar.classList.contains('stick')){
+		// Remove the class
+		topbar.classList.remove('stick');
+	}
+});
 },{"pjax":1}]},{},[23]);

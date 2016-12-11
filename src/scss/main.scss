@@ -1,5 +1,14 @@
 @import "foundation";
 
+$small-size: 40em;
+$medium-size: 64em;
+$large-size: 75em;
+
+$small-only: "screen and (min-width: $small-size) and (max-width: $medium-size)";
+$medium-only: "screen and (min-width: $medium-size) and (max-width: $large-size)";
+$medium-up: "screen and (min-width: $small-size)";
+$large-up: "screen and (min-width: $medium-size)";
+
 body{
 	margin: 0;
 	font-family: 'HelveticaNeue', sans-serif;
@@ -17,8 +26,12 @@ a{
 
 
 .container{
-	width: 1110px;
+	width: 95%;
+	max-width: 1110px;
 	margin: 0 auto;
+	@media #{$medium-up}{
+		width: 90%;
+	}
 }
 
 .inner-content{
@@ -26,21 +39,52 @@ a{
 }
 
 #topbar{
-	padding-top: 3em;
+	padding-top: 2em;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
+	@media #{$medium-up}{
+		padding-top: 3em;
+	}
+
+	&.stick{
+		nav{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			background-color: #fff;
+			text-align: center;
+			z-index: 5;
+			margin: 0;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			padding-top: 1em;
+		}
+		padding-bottom: 68px;
+	}
 	.me-img{
-		margin-right: 2em;
+		margin-right: 1em;
 		display: inline-block;
 		vertical-align: middle;
+		@media #{$medium-up}{
+			margin-right: 2em;
+		}
+
 		img{
-			width: 100px;
-			height: 100px;
+			width: 75px;
+			height: 75px;
 			border-radius: 50%;
+			@media #{$medium-up}{
+				width: 100px;
+				height: 100px;
+			}
 		}
 	}
 	.title{
 		display: inline-block;
 		vertical-align: middle;
+		font-size: 90%;
+		@media #{$medium-up}{
+			font-size: 100%;
+		}
+
 		h1, h2{
 			margin: 0;
 		}
@@ -59,14 +103,22 @@ a{
 		margin-top: 3em;
 		a{
 			display: inline-block;
-			margin: 0 1em;
+			margin: 0 5px;
 			padding-bottom: 1em;
 			border-bottom: 2px solid transparent;
+			@media #{$medium-up}{
+				margin: 0 1em;
+			}
+			
 			&.active{
 				border-color: rgba(0,0,0,0.5)
 			}
 			li{
 				list-style: none;
+				img{
+					width: 17px;
+					height: 17px;
+				}
 			}
 		}
 	}
@@ -98,7 +150,7 @@ a{
 		}
 		.descriptive-column{
 			padding: 1em 3em;
-			height: 200px;
+			min-height: 200px;
 			.project-title{
 				font-size: 2em;
 				font-weight: bold;

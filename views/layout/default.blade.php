@@ -27,24 +27,30 @@
 				</div>
 
 				<div class="row align-center">
-					<nav>
+					<nav id="sticky-nav">
 						<a href="/projects" class="{{$_page == "projects" ? "active" : ""}}" data-page="projects">
 							<li>Projects</li>
 						</a>
 						<a href="/me" class="{{$_page == "me" ? "active" : ""}}" data-page="me">
-							<li>About Me</li>
+							<li>About</li>
 						</a>
 						<a href="/contact" class="{{$_page == "contact" ? "active" : ""}}" data-page="contact">
 							<li>Contact</li>
 						</a>
 						<a href="https://github.com/danjohnson95" target="_blank">
-							<li>GitHub</li>
+							<li>
+								<img src="/img/github.svg">
+							</li>
 						</a>
 						<a href="http://stackoverflow.com/users/story/2719424" target="_blank">
-							<li>StackOverflow</li>
+							<li>
+								<img src="/img/stack-overflow.svg">
+							</li>
 						</a>
 						<a href="https://uk.linkedin.com/in/danieljohnson95" target="_blank">
-							<li>LinkedIn</li>
+							<li>
+								<img src="/img/linkedin.svg">
+							</li>
 						</a>
 					</nav>
 				</div>
