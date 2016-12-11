@@ -1,91 +1,85 @@
-#sidebar{
-	background-color: #fff;
-	width: 100%;
-	padding: 1em 0;
-	position: fixed;
-	min-width: 330px;
-
+#topbar{
+	padding-top: 2em;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 	@media #{$medium-up}{
-		width: 350px;
-		height: 100%;	
-		padding: 3em 2em 0 2em;	
+		padding-top: 3em;
 	}
-	@media #{$large-up}{
-		width: 400px;
-		padding: 3em 3em 0 3em;
-	}
-	top: 0;
 
-	.me-section{
-		border-bottom: 1px solid $border-color;
-		@media #{$medium-up}{
+	&.stick{
+		nav{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			background-color: #fff;
 			text-align: center;
-			padding-bottom: 2em;
-			.column:first-child{
-				width: 100%;
-			}
+			z-index: 5;
+			margin: 0;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			padding-top: 1em;
+		}
+		padding-bottom: 68px;
+	}
+	.me-img{
+		margin-right: 1em;
+		display: inline-block;
+		vertical-align: middle;
+		@media #{$medium-up}{
+			margin-right: 2em;
 		}
 
 		img{
-			width: 70px;
+			width: 75px;
+			height: 75px;
 			border-radius: 50%;
-			overflow: hidden;
-			margin: 0 0 1em 0;
 			@media #{$medium-up}{
-				width: 200px;
+				width: 100px;
+				height: 100px;
 			}
 		}
-		div.name{
-			font-weight: bold;
-			display: block;
-			font-size: 1.5em;
-			@media #{$medium-up}{
-				font-size: 2em;
-				text-align: center;
-			}
+	}
+	.title{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 90%;
+		@media #{$medium-up}{
+			font-size: 100%;
+		}
 
-			small{
-				display: block;
-				font-size: initial;
-				color: $light-color;
-				font-weight: 300;
-				font-size: .7em;
-				small{
-					font-size: .7em;
-					color: $lighter-color;
-				}
-			}
+		h1, h2{
+			margin: 0;
+		}
+		h2{
+			font-size: 1.2em;
+			color: rgba(0,0,0,0.4);
+		}
+		small{
+			color: rgba(0,0,0,0.3);
 		}
 	}
 	nav{
-
-		display: none;
-
-		@media #{$medium-up}{
-			display: block;
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			a{
-				color: initial;
-				display: block;
-				&.active li, li:hover{
-					background-color: $border-color;
-				}
-				li{
-					padding: .5em 1em;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: rgba(0,0,0,0.5);
+		margin-top: 3em;
+		a{
+			display: inline-block;
+			margin: 0 4px;
+			padding-bottom: 1em;
+			border-bottom: 2px solid transparent;
+			@media #{$medium-up}{
+				margin: 0 1em;
+			}
+			
+			&.active{
+				border-color: rgba(0,0,0,0.5)
+			}
+			li{
+				list-style: none;
+				img{
+					width: 17px;
+					height: 17px;
 				}
 			}
-		}
-	}
-	footer{
-		display: none;
-		@media #{$medium-up}{
-			display: block;
-			font-size: 12px;
-			color: $light-color;
-			padding-left: 1em;
-			margin-top: 1em;
 		}
 	}
 }

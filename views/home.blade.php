@@ -12,7 +12,7 @@
 				</div>--}}
 				<div class="row align-top">
 					<div class="column small-12">
-						<a href="/projects/{{$project['link']}}">
+						<a href="/projects/{{$project['link']}}" data-pjax>
 							<div class="project-outer-img">
 								<div class="project-img" style="background-image:url(/img/{{$project['img']}})"></div>
 							</div>
@@ -20,7 +20,7 @@
 					</div>
 					<div class="column small-12 descriptive-column">
 						<div class="project-title">
-							<a href="/projects/{{$project['link']}}">
+							<a href="/projects/{{$project['link']}}" data-pjax>
 								{{$project['title']}}
 							</a>
 						</div>
@@ -28,7 +28,7 @@
 							{{$project['description']}}
 						</div>
 						<p>
-							{!!$project['long_desc']!!} <strong><a href="/projects/{{$project['link']}}">Read more &raquo;</a></strong>
+							{!!$project['long_desc']!!} <strong><a href="/projects/{{$project['link']}}" data-pjax>Read more &raquo;</a></strong>
 						</p>
 						<div class="project-skills">
 							@foreach($project['skills'] as $skill)

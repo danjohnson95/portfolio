@@ -18,7 +18,7 @@ class ProjectController extends Controller{
 		return [
 			'title' => 'Zappem',
 			'subtitle' => 'A bug tracker where developers can use their own database',
-			'img' => 'zappem-mockup.jpg',
+			'img' => 'zappem.jpg',
 			'links' => 
 				[
 					'GitHub' => 'https://github.com/danjohnson95/zappem',
@@ -61,7 +61,7 @@ class ProjectController extends Controller{
 		return [
 			'title' => 'Aeromap',
 			'subtitle' => 'An HTML5 web-app for seeing where you are during a flight',
-			'img' => 'aeromap-mockup.jpg',
+			'img' => 'aeromap.jpg',
 			'links' => 
 				[
 					'GitHub' => 'https://github.com/danjohnson95/aeromap',

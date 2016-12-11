@@ -1,0 +1,15 @@
+#about-me{
+	ul.skill-list{
+		padding:0;
+		list-style: none;
+		li{
+			display: inline-block;
+		    background-color: rgba(0,0,0,0.1);
+		    padding: 5px;
+		    margin: 3px;
+		    border-radius: 5px;
+		    line-height: 1;
+		    font-family: Monospace;
+		}
+	}
+}

@@ -2,11 +2,12 @@
 
 @section('content')
 
+<div id="about-me">
 	<h1>About Me</h1>
 
-	<p class="sub">
+	<p>
 		Hi, I'm Dan and I'm a web developer with over three years experience in a range of web technologies including: 
-		<ul>
+		<ul class="skill-list">
 			<li>PHP</li>
 			<li>Node.js</li>
 			<li>Laravel</li>
@@ -32,6 +33,7 @@
 	<p>
 		Programming is also a hobby of mine so in my free time I'm usually working on cool projects such as home automation, or reading the latest tech news.
 	</p>
+</div>
 
 
 @stop

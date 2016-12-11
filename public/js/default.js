@@ -785,7 +785,7 @@ var pjax = require('pjax'),
 
 var sidebar = {
 	refreshActive: function(active){
-		var sidebar = document.getElementById('sidebar'),
+		var sidebar = document.getElementById('topbar'),
 			nav = sidebar.querySelector('nav'),
 			li = nav.children;
 		for(var i=0; i<nav.children.length; i++){

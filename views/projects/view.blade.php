@@ -3,14 +3,13 @@
 @section('content')
 
 <div id="viewproject">
+	<img src="/img/{{$project['img']}}">
 	<h1>{{$project['title']}}</h1>
 	<h2>{{$project['subtitle']}}</h2>
-	<img src="/img/{{$project['img']}}">
-
-	<ul>
+	<ul class="links">
 		@foreach($project['links'] as $Name=>$URL)
 			<li>
-				<strong>{{$Name}}</strong> <a href="{{$URL}}" target="_blank">{{$URL}}</a>
+				{{$Name}} <a href="{{$URL}}" target="_blank">{{$URL}}</a>
 			</li>
 		@endforeach
 	</ul>

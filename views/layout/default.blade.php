@@ -97,6 +97,12 @@
 			</div>
 		</div>
 
+		<div class="container">
+			<footer>
+				&copy; Dan Johnson {{date('Y')}}
+			</footer>
+		</div>
+		
 		<script src="/js/default.js"></script>
 
 	</body>
