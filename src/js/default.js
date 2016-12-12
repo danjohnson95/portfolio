@@ -30,7 +30,7 @@ var master = {
 	registerFormListener: function(e){
 		form = document.forms['contact-form'];
 		if(!form) return;
-		form.addEventListener('submit', master.submitContactForm);
+		//form.addEventListener('submit', master.submitContactForm);
 	},
 
 	submitContactForm: function(e){

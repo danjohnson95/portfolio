@@ -5,9 +5,10 @@
 	<h1>Contact Me</h1>
 
 	<p>
-		Use the form below if you'd like to get in touch with me or request my CV.
+		Drop me an email if you'd like to chat further or request a copy of my CV.<br><br>
+		Email <a href="mailto:dan@danj.eu">dan@danj.eu</a>
 	</p>
-
+{{-- 
 	<form action="" method="post" id="contact-form">
 
 		<input type="text" placeholder="Name" name="name">
@@ -15,6 +16,6 @@
 		<textarea placeholder="Message..." name="message"></textarea>
 		<button type="submit" class="button">Send Message</button>
 
-	</form>
+	</form> --}}
 	
 @stop
