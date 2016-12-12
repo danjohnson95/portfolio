@@ -81,6 +81,47 @@ h1{
 		}
 	}
 
+.gitbar{
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	border: 1px solid #e2e2e2;
+	padding: 1em;
+	background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	&:before{
+		content:'';
+		position: absolute;
+		left: 6px;
+		top: 4px;
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		background-color: #ff6259;
+		border: 1px solid rgba(0,0,0,0.15);
+
+	}
+	.top{
+		background: linear-gradient(#ebebeb, #d7d7d7);
+		height: 23px;
+		line-height: 1.9;
+		text-align: center;
+		margin: -1em -1em 1em -1em;
+	}
+	table{
+		line-height: 2;
+		tr td:first-child{
+			padding-right: 10px;
+		}
+		small{
+			color: #666;
+			font-size: 90%;
+			margin-left: 5px;
+		}
+	}
+}
+
 footer{
 	text-align: center;
 	border-top: 1px solid rgba(0,0,0,0.1);

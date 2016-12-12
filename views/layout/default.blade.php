@@ -102,8 +102,32 @@
 				&copy; Dan Johnson {{date('Y')}}
 			</footer>
 		</div>
-		
+
 		<script src="/js/default.js"></script>
 
+		{{--<div class="gitbar">
+			<div class="top">
+				Gitbar
+			</div>
+
+			<table>
+				<tr>
+					<td>Current Branch</td>
+					<td><strong>bugfix/d9567</strong></td>
+				</tr>
+				<tr>
+					<td>Last Commit</td>
+					<td><strong>#38t25fa</strong><small>6 minutes ago</small></td>
+				</tr>
+				<tr>
+					<td>Checkout</td>
+					<td>
+						<select>
+							<option>bugfix/d9567</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>--}}
 	</body>
 </html>

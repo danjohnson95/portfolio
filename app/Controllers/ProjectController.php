@@ -14,6 +14,18 @@ class ProjectController extends Controller{
 		return $this->view('projects/view', ['project' => $this->getAeromap()]);
 	}
 
+	public function gitbar(){
+		return $this->view('projects/view', ['project' => $this->getGitbar()]);
+	}
+
+	public function portfolio(){
+		return $this->view('projects/view', ['project' => $this->getPortfolio()]);
+	}
+
+	public function queueOffice(){
+		return $this->view('projects/view', ['project' => $this->getQueueOffice()]);
+	}
+
 	private function getZappem(){
 		return [
 			'title' => 'Zappem',
@@ -29,7 +41,7 @@ class ProjectController extends Controller{
 				Zappem is built in JS and runs on Node, so it can be installed by running <code>npm install -g zappem</code>.
 			</p>
 			<p>
-				When running for the first time, the user will need to enter their MongoDB details - this could be their own MongoDB server or a hosted one from a service such as <a href=''>mLab</a>.
+				When running for the first time, the user will need to enter their MongoDB details - this could be their own MongoDB server or a hosted one from a service such as <a href='https://mlab.com/' target='_blank'>mLab</a>.
 			</p>
 			<p>
 				Once successfully connected to the user's database, they will be able to create their first project. With this, they use one of the connector libraries I have built to connect their application to Zappem.
@@ -109,6 +121,41 @@ PythagorasEquirectangular: function(CurrentLat, CurrentLon, CheckLat, CheckLon){
 		];
 	}
 
+	private function getGitbar(){
+		return [
+			'title' => 'Gitbar',
+			'subtitle' => 'A toolbar for quickly switching branches through the browser',
+			'img' => 'gitbar.jpg',
+			'links' => [
+				'GitHub' => 'https://github.com/danjohnson95/gitbar'
+			],
+			'body' => ''
+		];
+	}
+
+	private function getPortfolio(){
+		return [
+			'title' => 'Portfolio',
+			'subtitle' => 'My personal website for showcasing my best work',
+			'img' => 'portfolio.jpg',
+			'links' => [
+				'GitHub' => 'https://github.com/danjohnson95/portfolio',
+				'Website' => 'https://danjohnson.xyz'
+			],
+			'body' => ''
+		];
+	}
+
+	private function getQueueOffice(){
+		return [
+			'title' => 'Queue Office',
+			'subtitle' => 'A tool for managing multiple RabbitMQ services',
+			'img' => 'queue-office.jpg',
+			'links' => [],
+			'body' => ''
+		];
+	}
+
 	private function getProjects(){
 		return [
 			[
@@ -144,7 +191,20 @@ PythagorasEquirectangular: function(CurrentLat, CurrentLon, CheckLat, CheckLon){
 						'Laravel',
 						'Composer',
 						'SSH'
-					]
+					],
+				'img' => 'gitbar.jpg'
+			],
+			[
+				'title' => 'Portfolio Website',
+				'description' => 'My personal website for showcasing my best work',
+				'long_desc' => 'The source code for this website is available on my GitHub profile.',
+				'link' => 'portfolio',
+				'skills' => [
+					'SCSS',
+					'pushState + AJAX',
+					'Composer'
+				],
+				'img' => 'portfolio.jpg'
 			],
 			[
 				'title' => 'Queue Office',
@@ -156,18 +216,8 @@ PythagorasEquirectangular: function(CurrentLat, CurrentLon, CheckLat, CheckLon){
 						'RabbitMQ',
 						'Laravel',
 						'WebSockets'
-					]
-			],
-			[
-				'title' => 'Portfolio Website',
-				'description' => 'My personal website for showcasing my best work',
-				'long_desc' => 'The source code for this website is available on my GitHub profile.',
-				'link' => 'portfolio',
-				'skills' => [
-					'SCSS',
-					'pushState + AJAX',
-					'Composer'
-				]
+					],
+				'img' => 'queue-office.jpg'
 			]
 		];
 	}
