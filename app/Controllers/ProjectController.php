@@ -127,9 +127,31 @@ PythagorasEquirectangular: function(CurrentLat, CurrentLon, CheckLat, CheckLon){
 			'subtitle' => 'A toolbar for quickly switching branches through the browser',
 			'img' => 'gitbar.jpg',
 			'links' => [
-				'GitHub' => 'https://github.com/danjohnson95/gitbar'
+				'GitHub' => 'https://github.com/danjohnson95/gitbar',
+				'Packagist' => 'https://packagist.org/packages/danj/gitbar'
 			],
-			'body' => ''
+			'body' => '<p>
+	Gitbar is a <a href="https://laravel.com" target="_blank">Laravel</a> package for use in a development or testing environment.
+</p>
+<p>
+	My current workflow involves developing on a local machine and then pushing the code up to a test server for testing by another department. All features and bug-fixes are committed in seperate branches and then pushed up to the test server in branches to avoid conflict errors.
+</p>
+<p>
+	Our testing department needed to switch between different branches to test different code, however they did not have the required authorisation to SSH into the server. It was becoming time consuming switching the branches for them, so I built Gitbar which allows them to switch branches themselves without needing SSH access.
+</p>
+
+<p>
+	During each page load, the GitBar HTML snippet is injected into the body of the page. The GitBar CSS and JS files are also loaded, but are minimal in size so performance is unaffected.
+</p>
+<p>
+	An AJAX request then runs to find out the current and available branches. It does this by running a <code>git branch</code> command inside PHP. The Git directory and any permissions required are passed into the config file through the .env file.
+</p>
+<p>
+	Gitbar also displays the latest commit hash on the current branch along with the time of the last commit. This information is handy when working on a team.
+</p>
+<p>
+	On change of the dropdown list, an AJAX request is run which performs a <code>git checkout</code> to the branch selected in a work tree specified in the config file. The page then refreshes.
+</p>'
 		];
 	}
 
@@ -142,7 +164,21 @@ PythagorasEquirectangular: function(CurrentLat, CurrentLon, CheckLat, CheckLon){
 				'GitHub' => 'https://github.com/danjohnson95/portfolio',
 				'Website' => 'https://danjohnson.xyz'
 			],
-			'body' => ''
+			'body' => "<p>
+	I decided against using a CMS such as WordPress for my portfolio. This way I retain full customisation of my website.
+</p>
+<p>
+	I really enjoy writing view files in Laravel Blade syntax, so I found a package which ports Blade to PHP with no Laravel requirement. <a href='https://github.com/PhiloNL/Laravel-Blade' target='_blank'>PhiloNL/Laravel-Blade</a>.
+</p>
+<p>
+	I also used the <a href='https://github.com/klein/klein.php' target='_blank'>Klein</a> routing library because of it's simplicity and very low overhead.
+</p>
+<p>
+	To make pages load quicker, I used a <a href='https://github.com/MoOx/pjax' target='_blank'>pjax</a> plugin. This requests the content over AJAX and then injects the response into the page. This way the layout view is only being rendered on an actual page load rather than navigation.
+</p>
+<p>
+	I find writing CSS to be a much easier and quicker process when using the SASS pre-processor, so all styles are written in SCSS syntax and then compiled to CSS files during development using Gulp.
+</p>"
 		];
 	}
 
