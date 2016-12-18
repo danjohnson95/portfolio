@@ -3,6 +3,22 @@
 @section('content')
 
 <div id="projects">
+
+	{{--<div class="intro">
+		<p>
+			Here are some of the projects I've worked on recently.
+		</p>
+
+		<p>
+			Click on them to read more, view the source code or try a demo.
+		</p>
+
+		<p>
+			You can find out more about me on the <a href="/about" data-pjax>About</a> page where you'll find a list of all the technologies I've worked with.
+		</p>
+	</div>--}}
+
+
 	<div class="row align-top">
 	@foreach($projects as $project)
 		<div class="column small-12 medium-6">

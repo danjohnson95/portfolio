@@ -32,62 +32,17 @@
 							<li>Projects</li>
 						</a>
 						<a href="/me" class="{{$_page == "me" ? "active" : ""}}" data-page="me">
-							<li>About</li>
-						</a>
-						<a href="/contact" class="{{$_page == "contact" ? "active" : ""}}" data-page="contact">
-							<li>Contact</li>
+							<li>About Me</li>
 						</a>
 						<a href="https://github.com/danjohnson95" target="_blank">
 							<li>
-								<img src="/img/github.svg">
-							</li>
-						</a>
-						<a href="http://stackoverflow.com/users/story/2719424" target="_blank">
-							<li>
-								<img src="/img/stack-overflow.svg">
-							</li>
-						</a>
-						<a href="https://uk.linkedin.com/in/danieljohnson95" target="_blank">
-							<li>
-								<img src="/img/linkedin.svg">
+								<img src="/img/github.svg"> GitHub
 							</li>
 						</a>
 					</nav>
 				</div>
 			</div>
 		</div>
-
-		{{--<div id="topbar">
-			<div class="container">
-				<div class="row">
-					<div class="column">
-						<span>Dan Johnson</span>
-					</div>
-					<div class="column shrink">
-						<nav>
-							<a href="/projects" class="{{$_page == "projects" ? "active" : ""}}" data-page="projects">
-								<li>Projects</li>
-							</a>
-							<a href="/me" class="{{$_page == "me" ? "active" : ""}}" data-page="me">
-								<li>About Me</li>
-							</a>
-							<a href="/contact" class="{{$_page == "contact" ? "active" : ""}}" data-page="contact">
-								<li>Contact</li>
-							</a>
-							<a href="https://github.com/danjohnson95" target="_blank">
-								<li>GitHub</li>
-							</a>
-							<a href="http://stackoverflow.com/users/story/2719424" target="_blank">
-								<li>StackOverflow</li>
-							</a>
-							<a href="https://uk.linkedin.com/in/danieljohnson95" target="_blank">
-								<li>LinkedIn</li>
-							</a>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>--}}
 
 		<div class="container">
 			<div id="content" data-page="{{$_page}}">
@@ -107,29 +62,6 @@
 
 <script>   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');    ga('create', 'UA-38468493-6', 'auto');   ga('send', 'pageview');  </script>
 
-		{{--<div class="gitbar">
-			<div class="top">
-				Gitbar
-			</div>
-
-			<table>
-				<tr>
-					<td>Current Branch</td>
-					<td><strong>bugfix/d9567</strong></td>
-				</tr>
-				<tr>
-					<td>Last Commit</td>
-					<td><strong>#38t25fa</strong><small>6 minutes ago</small></td>
-				</tr>
-				<tr>
-					<td>Checkout</td>
-					<td>
-						<select>
-							<option>bugfix/d9567</option>
-						</select>
-					</td>
-				</tr>
-			</table>
-		</div>--}}
+		{{----}}
 	</body>
 </html>

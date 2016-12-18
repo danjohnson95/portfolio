@@ -65,12 +65,9 @@
 		transform: translate3d(0px,0px,0px);
 		a{
 			display: inline-block;
-			margin: 0 4px;
+			margin: 0 1em;
 			padding-bottom: 1em;
 			border-bottom: 2px solid transparent;
-			@media #{$medium-up}{
-				margin: 0 1em;
-			}
 			
 			&.active{
 				border-color: rgba(0,0,0,0.5)
