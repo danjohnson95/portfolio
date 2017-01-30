@@ -241,19 +241,6 @@ PythagorasEquirectangular: function(CurrentLat, CurrentLon, CheckLat, CheckLon){
 					'Composer'
 				],
 				'img' => 'portfolio.jpg'
-			],
-			[
-				'title' => 'Queue Office',
-				'description' => 'A tool for managing multiple RabbitMQ services',
-				'long_desc' => 'At my current job we rely quite heavily on <a href="https://www.rabbitmq.com/">RabbitMQ</a> - my job involves keeping an eye on 8 seperate instances. Before, this meant having 8 terminal windows open and periodically checking for any failed jobs. Now, I don\'t need any windows open as I get a notification if a job fails in any queue.',
-				'link' => 'queue-office',
-				'skills' => [
-						'Node',
-						'RabbitMQ',
-						'Laravel',
-						'WebSockets'
-					],
-				'img' => 'queue-office.jpg'
 			]
 		];
 	}
