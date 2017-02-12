@@ -31,6 +31,9 @@
 						<a href="/projects" class="{{$_page == "projects" ? "active" : ""}}" data-page="projects">
 							<li>Projects</li>
 						</a>
+						{{--<a href="/libraries" class="{{$_page == "libraries" ? "active" : ""}}" data-page="libraries">
+							<li>Libraries</li>
+						</a>--}}
 						<a href="/me" class="{{$_page == "me" ? "active" : ""}}" data-page="me">
 							<li>About Me</li>
 						</a>

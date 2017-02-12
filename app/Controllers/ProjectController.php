@@ -26,12 +26,16 @@ class ProjectController extends Controller{
 		return $this->view('projects/view', ['project' => $this->getQueueOffice()]);
 	}
 
+	public function devflow(){
+		return $this->view('projects/view', ['project' => $this->getDevflow()]);
+	}
+
 	private function getZappem(){
 		return [
 			'title' => 'Zappem',
 			'subtitle' => 'A bug tracker where developers can use their own database',
 			'img' => 'zappem.jpg',
-			'links' => 
+			'links' =>
 				[
 					'GitHub' => 'https://github.com/danjohnson95/zappem',
 					'Website' => 'https://zappem.xyz',
@@ -74,7 +78,7 @@ class ProjectController extends Controller{
 			'title' => 'Aeromap',
 			'subtitle' => 'An HTML5 web-app for seeing where you are during a flight',
 			'img' => 'aeromap.jpg',
-			'links' => 
+			'links' =>
 				[
 					'GitHub' => 'https://github.com/danjohnson95/aeromap',
 					'Website' => 'https://aeromap.xyz'
@@ -182,18 +186,33 @@ PythagorasEquirectangular: function(CurrentLat, CurrentLon, CheckLat, CheckLon){
 		];
 	}
 
-	private function getQueueOffice(){
+
+	private function getDevflow(){
 		return [
-			'title' => 'Queue Office',
-			'subtitle' => 'A tool for managing multiple RabbitMQ services',
-			'img' => 'queue-office.jpg',
-			'links' => [],
+			'title' => 'Devflow',
+			'subtitle' => 'A native app for viewing BitBucket issues in a desktop GUI',
+			'img' => 'devflow-mockup.jpg',
+			'links' => [
+				'GitHub' => 'https://github.com/danjohnson95/devflow'
+			],
 			'body' => ''
 		];
 	}
 
 	private function getProjects(){
 		return [
+			[
+				'title' => 'Devflow',
+				'description' => 'A desktop client for BitBucket issue tracking',
+				'long_desc' => 'Devflow is a native application for Windows, macOS and Linux built on the <a href="">Electron</a> framework. It connects with the BitBucket API to allow users to view, update and modify their issues',
+				'link' => 'devflow',
+				'skills' => [
+					'Node JS',
+					'Electron',
+					'WebSockets'
+				],
+				'img' => 'devflow-mockup.jpg'
+			],
 			[
 				'title' => 'Zappem',
 				'description' => 'A bug tracker where developers can use their own database',
