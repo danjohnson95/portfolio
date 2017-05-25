@@ -56,6 +56,14 @@
 			</article>
 		</div>
 	@endforeach
+
+	{{--<div class="row align-top">
+		@foreach($libraries as $library)
+			<div class="column small-12">
+
+			</div>
+		@endforeach
+	</div>--}}
 </div>
 
 @stop

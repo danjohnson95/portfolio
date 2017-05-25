@@ -10,5 +10,5 @@ $Router->get('/projects/zappem', 'ProjectController@zappem');
 $Router->get('/projects/aeromap', 'ProjectController@aeromap');
 $Router->get('/projects/gitbar', 'ProjectController@gitbar');
 $Router->get('/projects/portfolio', 'ProjectController@portfolio');
-$Router->get('/projects/queue-office', 'ProjectController@queueOffice');
+$Router->get('/projects/devflow', 'ProjectController@devflow');
 $Router->get('/devflow/callback', 'DevflowController@apiCallback');
