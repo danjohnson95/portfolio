@@ -37,6 +37,9 @@
 			<li>JavaScript</li>
 			<li>RabbitMQ</li>
 			<li>REST API</li>
+			<li>PHPUnit</li>
+			<li>Mocha</li>
+			<li>Chai</li>
 			<li>Git</li>
 			<li>Gulp</li>
 			<li>Grunt</li>

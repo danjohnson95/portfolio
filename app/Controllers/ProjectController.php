@@ -33,9 +33,7 @@ class ProjectController extends Controller{
 			'img' => 'zappem.jpg',
 			'links' => 
 				[
-					'GitHub' => 'https://github.com/danjohnson95/zappem',
-					'Website' => 'https://zappem.xyz',
-					'Demo' => 'http://demo.zappem.xyz'
+					'GitHub' => 'https://github.com/Zappem'
 				],
 			'body' => "	<p>
 				Zappem is built in JS and runs on Node, so it can be installed by running <code>npm install -g zappem</code>.
@@ -48,7 +46,7 @@ class ProjectController extends Controller{
 			</p>
 			<ul>
 				<li>
-					<a href='https://github.com/danjohnson95/zappem-laravel' target='_blank'>Laravel Connector</a>
+					<a href='https://github.com/Zappem/zappem-laravel' target='_blank'>Laravel Connector</a>
 				</li>
 			</ul>
 			<p>
@@ -202,6 +200,7 @@ PythagorasEquirectangular: function(CurrentLat, CurrentLon, CheckLat, CheckLon){
 				'skills' => [
 						'Node JS',
 						'MongoDB',
+						'Mocha',
 						'WebSockets'
 					],
 				'img' => 'zappem.jpg'
